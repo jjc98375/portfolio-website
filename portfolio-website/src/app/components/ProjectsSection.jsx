@@ -24,7 +24,7 @@ const projectsData = [
         id: 3,
         title: "ucsc tips",
         description: " a platform that shares campus tips from ucsc students",
-        image: "/",
+        image: "/images/projects/bananaslug.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/sharont1121/UCSC_Tips?tab=readme-ov-file",
     }
