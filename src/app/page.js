@@ -6,6 +6,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import ExperienceSection from "./components/ExperienceSection";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <ExperienceSection />
         <ProjectsSection />
         <EmailSection />
+        <SpeedInsights />
       </div>
       <Footer />
     </main>
