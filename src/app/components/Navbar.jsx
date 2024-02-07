@@ -57,14 +57,10 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
-            {navLinks.map((link) => {
+            {navLinks.map((link, index) => {
               return (
-                <li>
-                  <NavLink
-                    key={link.title}
-                    title={link.title}
-                    href={link.path}
-                  />
+                <li key={index}>
+                  <NavLink title={link.title} href={link.path} />
                 </li>
               );
             })}

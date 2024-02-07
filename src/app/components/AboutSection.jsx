@@ -102,16 +102,16 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-white texxt-base md:text-lg">
-            Hello, I'm Joshua Cho, a Computer Science graduate from the
+            Hello, I am Joshua Cho, a Computer Science graduate from the
             University of California, Santa Cruz. Throughout my college years, I
             participated in several projects, learning the latest Agile
             Technologies and honing my proficiency in Python, Javascript,
             Next.js, Redux, Node.js, Express, Firebase, Vercel, Svelte, Flutter,
-            and Java. Outside of academics, I've had internships at diverse
+            and Java. Outside of academics, I have had internships at diverse
             institutions, such as IBM, SE Technology, and the Tech4Good Research
             Lab. These experiences have allowed me to adapt to professional work
             environments and grow as a software engineer. Please feel free to
-            explore my experiences and projects, and don't hesitate to reach out
+            explore my experiences and projects, and do not hesitate to reach out
             if you have any questions!
           </p>
 
