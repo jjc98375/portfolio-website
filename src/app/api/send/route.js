@@ -9,19 +9,16 @@ export async function POST(request) {
 
   const body = await request.json();
   console.log(body);
-  const { email, subject, message } = body;
+  const { name, email, message } = body;
 
-  console.log(email, subject, message)
 
   try {
     const data = await resend.emails.send({
       from: "Future Employer <onboarding@resend.dev>",
       to: ["cho.josh98@gmail.com"],
-      subject: subject,
+      subject: `New message from ${name} <${email}>`,
       react: (
         <>
-          <h1>{subject}</h1>
-          <p>From this email: {email}</p>
           <p>{message}</p>
         </>
       ),

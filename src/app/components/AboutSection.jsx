@@ -3,18 +3,60 @@ import React, { useState, useTransition } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faVuejs,
+  faPython,
+  faJava,
+  faNode,
+  faGithub,
+  faDocker,
+  faLinux,
+} from "@fortawesome/free-brands-svg-icons";
+
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>MongoDB</li>
-        <li>Mongoose</li>
+      <ul className="flex flex-wrap justify-center gap-4 p-5">
+        <li>
+          <FontAwesomeIcon icon={faHtml5} size="2x" title="HTML5" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faCss3} size="2x" title="CSS3" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faJs} size="2x" title="JavaScript" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faReact} size="2x" title="React" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faVuejs} size="2x" title="Vue.js" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faPython} size="2x" title="Python" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faJava} size="2x" title="Java" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faNode} size="2x" title="Node.js" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faGithub} size="2x" title="GitHub" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faDocker} size="2x" title="Docker" />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faLinux} size="2x" title="Linux" />
+        </li>
       </ul>
     ),
   },
@@ -23,18 +65,21 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
         <li>University of California, Santa Cruz</li>
+        <li>University of Washington, Seattle</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Awards",
+    id: "Awards",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>
+          <a href="https://www.linkedin.com/posts/joshua-jaehun-cho-598471160_ai-hackathon2023-ucsc-activity-7083310064442224641-VipE?utm_source=share&utm_medium=member_desktop">
+            Cruz Hack 2023 - 2nd place, Justice Hacks
+          </a>
+        </li>
       </ul>
     ),
   },
@@ -51,19 +96,25 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section id="about" className="text-white pt-24">
       <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
         <Image src="/images/aboutmepageImage.jpg" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-white texxt-base md:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Hello, I'm Joshua Cho, a Computer Science graduate from the
+            University of California, Santa Cruz. Throughout my college years, I
+            participated in several projects, learning the latest Agile
+            Technologies and honing my proficiency in Python, Javascript,
+            Next.js, Redux, Node.js, Express, Firebase, Vercel, Svelte, Flutter,
+            and Java. Outside of academics, I've had internships at diverse
+            institutions, such as IBM, SE Technology, and the Tech4Good Research
+            Lab. These experiences have allowed me to adapt to professional work
+            environments and grow as a software engineer. Please feel free to
+            explore my experiences and projects, and don't hesitate to reach out
+            if you have any questions!
           </p>
+
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
@@ -78,10 +129,10 @@ const AboutSection = () => {
               Education
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("Awards")}
+              active={tab === "Awards"}
             >
-              Certifications
+              Awards
             </TabButton>
           </div>
           <div className="mt-8">

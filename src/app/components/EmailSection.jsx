@@ -11,8 +11,8 @@ const EmailSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
+      name: e.target.name.value,
       email: e.target.email.value,
-      subject: e.target.subject.value,
       message: e.target.message.value,
     };
 
@@ -38,7 +38,10 @@ const EmailSection = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+    <section
+      id="contact"
+      className=" grid md:grid-cols-2 mt-80 pb-10 md:py-40 gap-4"
+    >
       <div>
         <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -66,11 +69,28 @@ const EmailSection = () => {
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
+              htmlFor="name"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Name
+            </label>
+            <input
+              name="name"
+              type="text"
+              id="name"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Josh Cho"
+            />
+          </div>
+
+          <div className="mb-6">
+            <label
               htmlFor="email"
               type="email"
               className="text-white block mb-2 text-sm font-medium"
             >
-              Your email
+              Email
             </label>
             <input
               name="email"
@@ -79,22 +99,6 @@ const EmailSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="josh@gmail.com"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="subject"
-              className="text-white block text-sm mb-2 font-medium"
-            >
-              Subject
-            </label>
-            <input
-              name="subject"
-              type="text"
-              id="subject"
-              required
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Just saying hi "
             />
           </div>
 
@@ -125,6 +129,10 @@ const EmailSection = () => {
           )}
         </form>
       </div>
+
+
+
+
     </section>
   );
 };

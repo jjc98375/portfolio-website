@@ -16,6 +16,20 @@
   }
 }
 
+/* @keyframes float {
+  0%, 100% {
+    transform: translatey(0) rotateX(10deg) rotateY(10deg);
+  }
+  50% {
+    transform: translatey(-20px) rotateX(10deg) rotateY(10deg);
+  }
+}
+
+.floating-3d {
+  animation: float 4s ease-in-out infinite;
+} */
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
