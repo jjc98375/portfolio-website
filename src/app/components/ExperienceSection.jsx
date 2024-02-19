@@ -9,11 +9,9 @@ const ExperienceSection = () => {
             company: "SE Technology",
             position: "Software Developer Intern",
             description: [
-
                 "Played a key role in developing a new community page for SE Lab V2.0, a design tool catered to system engineers, significantly enhancing the platform’s functionality.",
                 "Managed to minimize a development time up to 50% by effectively integrating Toast-UI Editor for community post implementation, while utilizing React and Redux for seamless page design.",
                 "Boosted user login performance by 20% through efficient backend integration using Node.js and MongoDB Atlas, improving overall user experience.",
-
             ],
         },
         { 
@@ -25,7 +23,6 @@ const ExperienceSection = () => {
                 "Revamped the personal info card for Tech4Good Lab’s officers, optimizing avatar settings and integrating social media links, resulting in a 20% surge in profile views.",
                 "Crafted 5 modular UI components for the website's landing page using AngularJS.",
                 "Earned distinction as the standout developer in Spring 2022, consistently delivering tasks ahead of time and providing technical support to team members.",
-                  
             ]
             
         },
@@ -45,26 +42,26 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" class="items-center pt-24 py-16 font-poppins dark:bg-gray-800">
-      <div class="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
-        <div class="max-w-xl mx-auto">
-          <div class="text-center ">
-            <div class="relative flex flex-col items-center">
+    <section id="experience" className="items-center pt-24 py-16 font-poppins">
+      <div className="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
+        <div className="max-w-xl mx-auto">
+          <div className="text-center ">
+            <div className="relative flex flex-col items-center">
 
-              <h1 class="text-5xl font-bold leading-tight text-white">
+              <h1 className="text-5xl font-bold leading-tight text-white">
                 {" "}
-                Company <span class="text-blue-500"> Timeline</span>{" "}
+                Company <span className="text-blue-500"> Timeline</span>{" "}
               </h1>
-              <div class="flex w-24 mt-1 mb-10 overflow-hidden rounded">
-                <div class="flex-1 h-2 bg-blue-200"></div>
-                <div class="flex-1 h-2 bg-blue-400"></div>
-                <div class="flex-1 h-2 bg-blue-600"></div>
+              <div className="flex w-24 mt-1 mb-10 overflow-hidden rounded">
+                <div className="flex-1 h-2 bg-blue-200"></div>
+                <div className="flex-1 h-2 bg-blue-400"></div>
+                <div className="flex-1 h-2 bg-blue-600"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="w-full mx-auto lg:max-w-3xl mt-10">
+        <div className="w-full mx-auto lg:max-w-3xl mt-10">
                   
                 {experiences.map((experience, index) => (
                     <ExperienceCard

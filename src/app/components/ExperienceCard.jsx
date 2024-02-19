@@ -2,27 +2,27 @@ import React from "react";
 
 const ExperienceCard = ({ timeline, company, position, description }) => {
   return (
-    <div class="relative flex justify-between">
-      <div class="hidden w-60 py-3 md:block ">
-        <h2 class="text-base font-medium text-gray-700 dark:text-gray-400">
+    <div className="relative flex justify-between">
+      <div className="hidden py-3 md:block ">
+        <div className="px-2 rounded-full text-white bg-gradient-to-r from-cyan-500 to-blue-500">
           {timeline}
-        </h2>
+        </div>
       </div>
-      <div class="absolute w-60 inline-block -top-12 md:hidden ">
-        <h2 class="text-base font-medium text-gray-700 dark:text-gray-400">
+      <div className="absolute inline-block -top-12 md:hidden ">
+        <div className="px-2 rounded-full text-white bg-gradient-to-r from-cyan-500 to-blue-500">
           {timeline}
-        </h2>
+        </div>
       </div>
-      
-      <div class="flex flex-col items-center w-10 mr-4 md:w-24">
+
+      <div className="flex flex-col items-center w-10 mr-4 md:w-24">
         <div>
-          <div class="flex items-center justify-center w-10 h-10 border border-blue-500 rounded-full dark:border-blue-400">
+          <div className="flex items-center justify-center w-10 h-10 border border-blue-500 rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="w-4 h-4 text-blue-500 dark:text-blue-400 bi bi-building"
+              className="w-4 h-4 text-blue-500 bi bi-building "
               viewBox="0 0 16 16"
             >
               <path
@@ -33,23 +33,22 @@ const ExperienceCard = ({ timeline, company, position, description }) => {
             </svg>
           </div>
         </div>
-        <div class="w-px h-full bg-blue-300"></div>
+        <div className="hidden md:block w-px h-full bg-blue-300"></div> 
       </div>
 
-      <div class="relative flex-1 mb-16 bg-white rounded shadow md:mb-8 dark:bg-gray-900">
-        <div class="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
-          <div class="h-10 origin-top-right transform -rotate-45 bg-white dark:bg-gray-900 drop-shadow-lg"></div>
+      <div className="relative md:ml-0 sm:ml-5 flex-1 mb-16 bg-white rounded shadow md:mb-8 ">
+        <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
+          <div className="h-10 origin-top-right transform -rotate-45 bg-white  drop-shadow-lg"></div>
         </div>
-        <div class="relative z-20 p-6">
-          <p class="text-xl font-bold text-gray-600 dark:text-gray-400">
-            {company}
-          </p>
-          <p class="mb-2 text-base italic text-gray-600 dark:text-gray-400 ">
-            {position}
-          </p>
+        <div className="relative z-20 p-6">
+          <p className="text-xl font-bold text-gray-600 ">{company}</p>
+          <p className="mb-2 text-base italic text-gray-600 ">{position}</p>
           <ul>
             {description.map((item, index) => (
-              <li key={index} class="list-disc ml-4 mb-2 text-base text-gray-600 dark:text-gray-400">
+              <li
+                key={index}
+                className="list-disc ml-4 mb-2 text-base text-gray-600 "
+              >
                 {item}
               </li>
             ))}
