@@ -12,13 +12,19 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xs': "480px",
+      'xs': "300px",
 
       'sm': "640px",
-      // => @media (min-width: 640px) { ... }
 
       "md": "768px",
-      // => @media (min-width: 768px) { ... }
+
+      // 'xs': "210px",
+
+      // 'sm': "520px",
+
+      // "md": "780px",
+
+
 
       "lg": "1024px",
       // => @media (min-width: 1024px) { ... }

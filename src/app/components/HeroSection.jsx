@@ -35,7 +35,7 @@ const HeroSection = () => {
             I am an experienced full stack web developer and mobile developer.
           </p>
           <div>
-            <a href="/josh-cho-resume-intern.pdf" download="Jae-Hun-Cho.pdf">
+            <a href="/josh-cho-resume-master.pdf" download="Jae-Hun-Cho.pdf">
               <button
                 type="button"
                 className="rounded-full font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-sm px-5 py-2.5 text-center"

@@ -12,15 +12,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#131643]">
       {/* <Navbar /> */}
-      <div className="container mx-auto px-12 xs:py-12 ">
+      <div className="container mx-auto px-12 mb-0 xs:mt-36 sm:mt-24">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
         <ProjectsSection />
         <EmailSection />
-        <SpeedInsights />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
