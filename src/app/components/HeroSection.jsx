@@ -5,6 +5,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 // import cvFile from "Jae-Hun-Cho_resume.pdf";
+// hellooo
 
 const HeroSection = () => {
   return (
