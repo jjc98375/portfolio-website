@@ -11,9 +11,9 @@ const ExperienceCard = ({
   const containerId = index % 2 === 0 ? "timeline-container-right" : "timeline-container-left";
   const pointerId = index % 2 === 0 ? "timeline-pointer-right" : "timeline-pointer-left";
   const imageL = [
-    "/images/tech4goodLogo.png",
-    "/images/IBMlogo.png",
     "/images/scaleAIlogo.jpeg",
+    "/images/IBMlogo.png",
+    "/images/tech4goodLogo.png",
   ];
 
   return (
@@ -23,8 +23,8 @@ const ExperienceCard = ({
         <div class="relative z-10">
           <img
             src={imageL[index]}
-            alt="IBM logo"
-            class="timeline-img "
+            alt="Company Logo"
+            class="timeline-img"
           />
           <div className={containerId}>
             <div class={pointerId} aria-hidden="true"></div>

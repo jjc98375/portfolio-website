@@ -66,8 +66,6 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Bacholor of Science in Computer Science at University of California, Santa Cruz</li>
-        {/* <li>Master of Science in Computer Science at Georgia Institute of Technology (currently enrolled)</li> */}
-
       </ul>
     ),
   },
@@ -103,7 +101,7 @@ const AboutSection = () => {
         <Image src="/images/aboutmepageImage.jpg" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-white texxt-base md:text-lg">
+          <p className="text-white text-base md:text-lg">
           Hello, I am Joshua Cho, and I am an aspiring software developer eager to contribute to a better society.
 Throughout my college years, I participated in several projects, learning the latest Agile technologies and honing my proficiency in Python, JavaScript, Next.js, Redux, Node.js, Express, Firebase, Vercel, Svelte, Flutter, and Java. Outside of academics, I have completed internships at diverse institutions such as IBM, SE Technology, and the Tech4Good Research Lab. These experiences have enabled me to adapt to professional work environments and grow as a software engineer.
 

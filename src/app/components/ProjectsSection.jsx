@@ -28,7 +28,15 @@ const projectsData = [
     image: "/images/projects/bananaslug.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/sharont1121/UCSC_Tips?tab=readme-ov-file",
-  },
+  }, 
+  { 
+    id: 4, 
+    title: "Advanced Football Video Analytics",
+    description: "Enhance football match analysis using YOLO for object detection, Kmeans for team assignments, and optical flow for detailed player movement insights.",
+    image: "/images/projects/football.png",
+    tag: ["All", "AI/ML"],
+    gitUrl: "https://github.com/jjc98375/football-analysis",
+  }
 ];
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -61,6 +69,11 @@ const ProjectsSection = () => {
           name="Mobile"
           onClick={handleTagChange}
           isSelected={tag == "Mobile"}
+        />
+        <ProjectTag
+          name="AI/ML"
+          onClick={handleTagChange}
+          isSelected={tag === "AI/ML"}
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">

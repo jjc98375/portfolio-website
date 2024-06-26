@@ -3,20 +3,17 @@ import ExperienceCard from "./ExperienceCard";
 
 const ExperienceSection = () => {
   const experiences = [
-
-
-   
     {
-      timeline: "March 2022 - June 2022",
-      company: "Tech4Good",
-      position: "Research Assistant",
+      timeline: "September 2023 - Present",
+      company: "Scale AI",
+      position: "AI Prompt Engineer",
       description: [
-        "Led the design and development of Tech4Good Lab's website landing page, employing TypeScript and SASS to craft distinct page segments.",
-        "Revamped the personal info card for Tech4Good Lab’s officers, optimizing avatar settings and integrating social media links, resulting in a 20% surge in profile views.",
-        "Crafted 5 modular UI components for the website's landing page using AngularJS.",
-        "Earned distinction as the standout developer in Spring 2022, consistently delivering tasks ahead of time and providing technical support to team members.",
+        "Crafted and executed tailored prompts to deepen the comprehension of Large Language Models (LLMs) in executing programming tasks, capitalizing on their inherent strengths and contextual understanding.",
+        "Enhanced the productivity of code output from LLMs through meticulous enhancements and adjustments.",
+        "Conducted comprehensive reviews of numerous code snippets and human feedback, set to be utilized by LLMs for future code generation. This ensured the quality and relevance of the training data.",
       ],
     },
+
 
     {
       timeline: "June 2022 - December 2022",
@@ -29,17 +26,18 @@ const ExperienceSection = () => {
         "Implemented automated test scripts in JSON and established a CI/CD pipeline with Jenkins, achieving a 40% reduction in testing time",
       ],
     },
-    {
-      timeline: "September 2023 - Present",
-      company: "Scale AI",
-      position: "AI Prompt Engineer",
-      description: [
-        "Crafted and executed tailored prompts to deepen the comprehension of Large Language Models (LLMs) in executing programming tasks, capitalizing on their inherent strengths and contextual understanding.",
-        "Enhanced the productivity of code output from LLMs through meticulous enhancements and adjustments.",
-        "Conducted comprehensive reviews of numerous code snippets and human feedback, set to be utilized by LLMs for future code generation. This ensured the quality and relevance of the training data.",
-      ]
-    },
 
+    {
+      timeline: "March 2022 - June 2022",
+      company: "Tech4Good",
+      position: "Research Assistant",
+      description: [
+        "Led the design and development of Tech4Good Lab's website landing page, employing TypeScript and SASS to craft distinct page segments.",
+        "Revamped the personal info card for Tech4Good Lab’s officers, optimizing avatar settings and integrating social media links, resulting in a 20% surge in profile views.",
+        "Crafted 5 modular UI components for the website's landing page using AngularJS.",
+        "Earned distinction as the standout developer in Spring 2022, consistently delivering tasks ahead of time and providing technical support to team members.",
+      ],
+    },
     // Add your experiences here
   ];
 
